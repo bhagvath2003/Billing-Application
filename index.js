@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(router);
 mongoose
   .connect(
-    "mongodb+srv://admin:admin@cluster0.nk7fe2u.mongodb.net/billing?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb"
   )
   .then(() => {
     app.listen(Port, () => {
